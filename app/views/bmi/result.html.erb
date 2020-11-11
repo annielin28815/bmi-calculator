@@ -1,13 +1,25 @@
-<h1>您的BMI值為：</h1>
 
 
-<%= form_tag '/bmi/result' do %>
-  <h3><%= @bmi %></h3><br />
-  <!-- 僅需連結到某頁用link -->
-  <%= link_to '回計算頁2', bmi_path %>
-  <!-- 有將資料打包需求用submit -->
-  <!-- <%= submit_tag "回計算頁" %> -->
+<div class="background">
+  <div class="container">
+    <%= form_tag '/bmi/result' do %>
+    <h1>您的BMI值為：</h1><br />
+    <h3><%= @bmi %></h3><br />
 
-<% end %>
+    <button>
+      <!-- 僅需連結到某頁用link -->
+      <%= link_to '回計算頁2', bmi_path %>
+      <!-- 有將資料打包需求用submit -->
+      <!-- <%= submit_tag "回計算頁" %> -->
+    </button>
+
+
+    <% end %>
+  </div>
+
+</div>
+
+
+
 
 
