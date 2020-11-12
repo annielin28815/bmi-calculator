@@ -2,24 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-body {
-  background-image: url("https://www.flaticon.com/svg/static/icons/svg/2513/2513218.svg");
-  background-position: 220px 150px;
-  background-repeat: no-repeat;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.wrap {
+  width: 800px;
+  height: 800px;
+  // background-color: #aaa;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 .container {
-  width: 400px;
-  height: 300px;
+  width: 350px;
+  height: 230px;
   background-color: rgba($color: #1158a9, $alpha: 0.5);
   padding: 20px;
   line-height: 30px;
   border: 5px double #000;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+}
+.pic {
+  width: 300px;
+}
+.pic img {
+  width: 250px;
 }
 
 .height,
@@ -35,8 +46,14 @@ body {
 }
 
 .container button {
-  margin: 0 135px;
-  background-color: #ccc;
+  margin: 0 120px;
   color: #000;
-  text-decoration: none;
+  border: 1px solid #7d7d7d;
+  border-radius: 18px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+a {
+  color: #000;
 }

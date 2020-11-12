@@ -1,6 +1,10 @@
 
 
-<div class="background">
+<div class="wrap">
+  <div class="pic">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/2513/2513218.svg" alt="run!">
+  </div>
+
   <div class="container">
     <%= form_tag '/bmi/result' do %>
     <h1>您的BMI值為：</h1><br />
@@ -8,7 +12,7 @@
 
     <button>
       <!-- 僅需連結到某頁用link -->
-      <%= link_to '回計算頁2', bmi_path %>
+      <%= link_to '回計算頁', bmi_path %>
       <!-- 有將資料打包需求用submit -->
       <!-- <%= submit_tag "回計算頁" %> -->
     </button>

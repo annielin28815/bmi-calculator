@@ -1,5 +1,9 @@
 
-<div class="background">
+<div class="wrap">
+  <div class="pic">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/2513/2513218.svg" alt="run!">
+  </div>
+
   <div class="container">
 
     <h1>BMI 計算機</h1>
@@ -13,12 +17,18 @@
       體重： <%= text_field_tag 'body_weight' %> 公分<br />
     </div>
 
-    <div class="submit">
-      <%= submit_tag "開始計算" %>
-    </div>
+    <button type="submit"> 開始計算
+    </button>
+
 
     <% end %>
   </div>
-
 </div>
 
+<script>
+  document.querySelector('button').addEventListener('click', function(e){
+    // e.preventDefault()
+    console.log('cc')
+  })
+  console.log('!')
+</script>
